@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <style>
+        .column1{border: 1px solid;background-color: gray;width: max-content;}
+        .column2{border: 1px solid;}
+    </style>
+</head>
+<body>
+    <h1>Planets data</h1><br>
+    <img src="F:\大二下\编程\内容\nasa_logo.gif" alt="nasa_logo"><br>
+    <input type="text" name="Search query" placeholder="Search query" style="color: gray;"><button>Go!</button>
+    <table style="border: 1px solid;">
+        <caption>Data&nbsp;about&nbsp;the&nbsp;planets&nbsp;of&nbsp;our&nbsp;solar&nbsp;system(Planetary&nbsp;facts&nbsp;taken&nbsp;from:<a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's&nbspPlanetary&nbspFact&nbspSheet-&nbspMetric)
+        </caption>
+        <tr>
+            <th class="column1" colspan="2">&nbsp;</th>
+            <th class="column1">Name</th>
+            <th class="column1">Mass 10<sup>24</sup>kg</th>
+            <th class="column1">Diameter (km)</th>
+            <th class="column1">Density (m/s<sup>3</sup>)</th>
+            <th class="column1">Gravity (m/s<sup>2</sup>)</th>
+            <th class="column1">Length of day (hours)</th>
+            <th class="column1">Distance from Sun(10<sup>6</sup>km)</th>
+            <th class="column1">Mean temperature (<small><sup>o</sup></small>C)</th>
+            <th class="column1">Number of moons</th>
+            <th class="column1">Notes</th>
+        </tr>
+        <tr>
+            <th rowspan="4" colspan="2" class="column2">Terrestial&nbsp;planets</th>
+            <th class="column2">Mecury</th>
+            <td class="column2">0.330</td>
+            <td class="column2">4,879</td>
+            <td class="column2">5427</td>
+            <td class="column2">3.7</td>
+            <td class="column2">4222.6</td>
+            <td class="column2">57.9</td>
+            <td class="column2">167</td>
+            <td class="column2">0</td>
+            <td class="column2">Closest&nbsp;to&nbsp;the&nbsp;Sun</td>
+        </tr>
+        <tr>
+            <th class="column2">Venus</th>
+            <td class="column2">4.87</td>
+            <td class="column2">12,104</td>
+            <td class="column2">5243</td>
+            <td class="column2">8.9</td>
+            <td class="column2">2802.0</td>
+            <td class="column2">108.2</td>
+            <td class="column2">464</td>
+            <td class="column2">0</td>
+            <td class="column2">&nbsp;</td>
+        </tr>
+        <tr>
+            <th class="column2">Earth</th>
+            <td class="column2">5.97</td>
+            <td class="column2">12,756</td>
+            <td class="column2">5514</td>
+            <td class="column2">9.8</td>
+            <td class="column2">24.0</td>
+            <td class="column2">149.6</td>
+            <td class="column2">15</td>
+            <td class="column2">1</td>
+            <td class="column2">Our&nbsp;world</td>
+        </tr>
+        <tr>
+            <th class="column2">Mars</th>
+            <td class="column2">0.642</td>
+            <td class="column2">6,792</td>
+            <td class="column2">3393</td>
+            <td class="column2">3.7</td>
+            <td class="column2">24.7</td>
+            <td class="column2">227.9</td>
+            <td class="column2">-65</td>
+            <td class="column2">2</td>
+            <td class="column2">The&nbsp;red&nbsp;planet</td>
+        </tr>
+        <tr>
+            <th class="column2" rowspan="4">Jovian planets</th>
+            <th class="column2" rowspan="2">Gas giants</th>
+            <th class="column2">Jupiter</th>
+            <td class="column2">1898</td>
+            <td class="column2">142,984</td>
+            <td class="column2">1326</td>
+            <td class="column2">23.1</td>
+            <td class="column2">9.9</td>
+            <td class="column2">778.6</td>
+            <td class="column2">-110</td>
+            <td class="column2">67</td>
+            <td class="column2">The&nbsp;largest&nbsp;planet</td>
+        </tr>
+        <tr>
+            <th class="column2">Satum</th>
+            <td class="column2">568</td>
+            <td class="column2">120,536</td>
+            <td class="column2">687</td>
+            <td class="column2">9.0</td>
+            <td class="column2">10.7</td>
+            <td class="column2">1433.5</td>
+            <td class="column2">-140</td>
+            <td class="column2">62</td>
+            <td class="column2">&nbsp;</td>
+        </tr>
+        <tr>
+            <th class="column2" rowspan="2">Ice giants</th>
+            <th class="column2">Uranus</th>
+            <td class="column2">86.8</td>
+            <td class="column2">51,118</td>
+            <td class="column2">1271</td>
+            <td class="column2">8.7</td>
+            <td class="column2">17.2</td>
+            <td class="column2">2872.5</td>
+            <td class="column2">-195</td>
+            <td class="column2">27</td>
+            <td class="column2">&nbsp;</td>
+        </tr>
+        <tr>
+           <th class="column2">Neptune</th>
+           <td class="column2">102</td>
+           <td class="column2">49,528</td>
+           <td class="column2">1638</td>
+           <td class="column2">11.0</td>
+           <td class="column2">16.1</td>
+           <td class="column2">4495.1</td>
+           <td class="column2">-200</td>
+           <td class="column2">14</td>
+           <td class="column2">&nbsp;</td>
+        </tr>
+        <tr>
+            <th class="column2" colspan="2">Dwarf&nbsp;planets</th>
+            <th class="column2">Pluto</th>
+            <td class="column2">0.0146</td>
+            <td class="column2">2,370</td>
+            <td class="column2">2095</td>
+            <td class="column2">0.7</td>
+            <td class="column2">153.3</td>
+            <td class="column2">5906.4</td>
+            <td class="column2">-225</td>
+            <td class="column2">5</td>
+            <td class="column2">
+                Declassified&nbsp;as&nbsp;a&nbsp;planet&nbsp;in&nbsp;2006,&nbsp;but&nbsp;this<br><a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html">remains controversial</a>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
