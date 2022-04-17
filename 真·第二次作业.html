@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <style>
+        body{background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;min-width: 1000px;min-height: 800px;}
+        /*我不行了，我没有脑子*/
+        #logo{float: left;}
+        ul.firsts{list-style-type: none;box-sizing: border-box;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;}
+        li.first{float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            width: 40px;}
+         ul.overflow_menu{list-style-type: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border-radius: 6px;
+            padding: 4px 0;
+            box-shadow: 0 4px 12px 1px rgb(64, 64, 64);
+            min-width: 155px}
+        li.overflow_menu{color: rgb(227, 227, 227);
+            font-weight: normal;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            height: 50px;line-height: 50px;}
+        #dots{color: rgb(255, 255, 255);}
+        #dots:hover{cursor: pointer;color: rgb(227, 227, 227);}
+        #dots:hover .overflow_menu{display: block;}
+        li.overflow_menu:hover{background-color: rgb(212, 212, 212);
+            cursor: pointer;}
+        a{ text-decoration: none;color: rgb(255, 255, 255);
+            font-family: 'Microsoft YaHei',Arial,Helvetica,sans-serif}
+        a:hover{color: rgb(218, 218, 218);}
+        .sbox{box-sizing: border-box;width: 100%;
+            position: absolute;left: 27%;top: 25%;}
+        input[type=search]{ display: block;box-sizing: border-box;
+            color:rgb(0, 0, 0);background-color: rgb(255, 255, 255);
+           padding: 1px 50px;margin-bottom: 2px;margin: 8px 0;
+           border-radius: 15px;border: none;
+            width: 200px;height: 40px;width: 46%;
+            background-image: url(search.png);
+            background-repeat: no-repeat;background-size: 25px;background-position: 6px;}
+        input[type=search]:focus{border: 2px solid rgb(246, 246, 246);}
+        input[type=button]{font-size: large;font-family: 'Microsoft YaHei',Arial,Helvetica,sans-serif;
+        border-radius: 15px;border: none;background-color: rgb(221, 221, 221,0.5);
+        height: 35px;width: 10%;color: rgb(226, 226, 226);
+        position: absolute;left: 18%;margin-top: 20px;}
+        input[type=button]:hover{color: black;background-color: rgb(255, 255, 255);cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="Bing.png" alt="Microsoft Bing">
+            </div>
+        <div class="leading">
+            <ul class="firsts">
+                <li class="first"><a href="https://cn.bing.com/images/trending?form=Z9LH">图片</a></li>
+                <li class="first"><a href="https://cn.bing.com/videos/trending?form=Z9LH1">视频</a></li>
+            <li class="first"><a href="https://cn.bing.com/search?q=translate&FORM=TTAHP1">翻译</a></li>
+            <li class="first" id="dots">. . . 
+                <ul class="overflow_menu">
+                    <li class="overflow_menu"><a href="https://cn.bing.com/academic?FORM=Z9LHS3"></a>学术</li>
+                    <li class="overflow_menu"><a href="https://cn.bing.com/dict?FORM=Z9LHS4"></a>词典</li>
+                    <li class="overflow_menu"><a href="https://cn.bing.com/maps?FORM=Z9LH2"></a>地图</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+        </header>
+        <div class="sbox">
+             <input type="search">
+             <input type="button" name="search" value="Search">
+        </div>
+        </div>
+    </body>
+</html>
