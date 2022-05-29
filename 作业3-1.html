@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+            font-size: 70px;
+            padding: 100px;
+        }
+        
+        button {
+            display: block;
+            margin: 40px auto;
+            width: 400px;
+            height: 80px;
+            font-size: 30px;
+        }
+        
+        span {
+            color: crimson
+        }
+    </style>
+
+</head>
+<body>
+    <button id="time" >Timing</button>
+
+    <div id="demo"></div>
+
+    <script>
+        document.getElementById('time').addEventListener('click',start);
+        //document.getElementById('time').addEventListener('click',time);
+
+        var click = 1;
+        var i = 0;
+        var time = '';
+        
+        function start(){
+            
+            click = click%2 ;  console.log(click);
+            if (click == 1){time = setInterval(add, 1000);
+            }else{
+                pause();
+            }
+
+            click++;
+
+            function add(){
+                var s = i++;
+                document.getElementById('demo').innerHTML = "Time passed: " + "<span>" + s + "</span>" + " s";
+            }
+
+            function pause(){
+                clearInterval(time);}
+        }
+
+ 
+       /*function add(){s = s++;
+    }
+
+       function check(){
+        num++;
+        var click = num%2 ;  console.log(click);
+    
+        if(click == 1){start();
+        }else{
+        pause();
+    }
+}
+    
+    function start(){
+        setInterval(add, 1000);
+        //console.log(s);
+        document.getElementById('demo').innerHTML = "Time passed: " + "<span>" + s + "</span>" + " s";
+    }
+    function pause(){
+        clearInterval(add, 1000);
+    }*/
+
+
+
+    </script>
+
+</body>
+</html>
